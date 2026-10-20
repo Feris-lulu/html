@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh‑CN">
+<head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+    <title>页面背景图像</title>
+    <style>
+body {
+background-image:url("flower.jpg");
+background-repeat: no-repeat;/*避免背景图像重复*/
+background-size: cover;/*覆盖整个元素*/
+background-attachment: fixed;/*确保整个元素被覆盖*/
+}
+    </style>
+</head>
+<body>
+<h1>背景重复or不重复</h1>
+<p>默认情况下，如果背景图像小于为其指定的元素（在此例中为 body 元素），图像将进行重复排列。<br>background-repeat: no-repeat;/*避免背景图像重复*/
+</p>
+<h1>背景覆盖</h1>
+<p>background-size: cover;/*覆盖整个元素*/<br>
+background-attachment: fixed;/*确保整个元素被覆盖*/</p>
+<h1>背景拉伸</h1>
+<p>background-size: 100% 100%</p>
+</body>
+</html>

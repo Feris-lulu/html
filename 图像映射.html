@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh‑CN">
+<head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+    <title>图像映射</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+<h1>图像映射</h1>
+<p>点击计算机、电脑或咖啡杯，跳转到新页面并了解更多相关信息</p>
+<img src="workplace.jpg" alt="工作场所" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+<area shape="rect" coords="35,45,270,343" alt="计算机" href="mac.html" onclick="myMap()">
+<area shape="rect" coords="290,174,333,246" alt="手机" href="phone.html" onclick="myPhone()">
+<area shape="circle" coords="340,292,43" alt="咖啡" href="coffee.html" onclick="myCoffee()"><!-- onclick 点击事件 -->
+</map>
+<script>
+function myMap() {
+alert("你点击了计算机!");
+}
+function myPhone(){
+alert("你点击了手机!");
+}
+function myCoffee() {
+alert("你点击了咖啡杯!");
+}
+//function 名字(){} 创建自定义函数；alert("文字") 弹出提示框 js只识别英文符号
+</script>
+</body>
+</html>
